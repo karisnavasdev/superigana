@@ -45,6 +45,8 @@
       <a href="#origin">Story</a>
       <a href="#universe">Memes</a>
       <a href="#token">Token</a>
+      <a href="#market">Chat</a>
+      <a href="#play">Play</a>
       <a href="#community">Community</a>
     </nav>
     <div class="nav-actions">
@@ -123,6 +125,27 @@
         <p>$SI</p>
       </div>
     </div>
+
+    <section class="section options" id="options" aria-labelledby="options-title">
+      <div class="wrap">
+        <p class="kicker"><span>SI</span> Two options</p>
+        <h2 id="options-title">PICK YOUR SUPER</h2>
+        <div class="option-grid">
+          <a class="option-card" href="#market">
+            <span class="option-no">01</span>
+            <h3>ASK THE IGUANA</h3>
+            <p>Chat with Super Iguana and check the live crypto market. Prices, movers, and $SI.</p>
+            <span class="option-go">OPEN THE CHAT</span>
+          </a>
+          <a class="option-card option-card-play" href="#play">
+            <span class="option-no">02</span>
+            <h3>TO THE MOON</h3>
+            <p>Fly Super Iguana through the chain. Grab $SI coins. Dodge the red candles.</p>
+            <span class="option-go">PLAY THE GAME</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <section class="section origin" id="origin">
       <div class="wrap">
@@ -422,6 +445,61 @@
       </div>
     </section>
 
+    <section class="section market" id="market" aria-labelledby="market-title">
+      <div class="wrap market-layout">
+        <div class="market-copy">
+          <p class="kicker"><span>SI</span> Market</p>
+          <h2 id="market-title">ASK SUPER IGUANA</h2>
+          <p class="market-lead">Super Iguana reads the live tape and answers in character. Prices move. This is not financial advice.</p>
+          <div class="market-tape" id="market-tape" aria-live="polite"></div>
+          <img class="market-mascot" src="Meme/super_iguana_01_500x500.png" alt="Super Iguana in a red cape" width="280" height="280">
+        </div>
+        <div class="chat">
+          <div class="chat-head">
+            <img src="logo.jpg" alt="" width="48" height="48">
+            <div>
+              <strong>Super Iguana</strong>
+              <span id="chat-status">Checking the chain…</span>
+            </div>
+          </div>
+          <div class="chat-log" id="chat-log" role="log" aria-relevant="additions" aria-label="Chat with Super Iguana"></div>
+          <div class="chat-chips" id="chat-chips">
+            <button type="button" data-ask="How is the crypto market?">Market</button>
+            <button type="button" data-ask="What is pumping?">Pumping</button>
+            <button type="button" data-ask="How is Bitcoin?">Bitcoin</button>
+            <button type="button" data-ask="How is Ethereum?">Ethereum</button>
+            <button type="button" data-ask="How is Super Iguana $SI?">$SI</button>
+          </div>
+          <form class="chat-form" id="chat-form">
+            <label class="sr-only" for="chat-input">Ask Super Iguana about the market</label>
+            <input id="chat-input" name="ask" type="text" maxlength="160" placeholder="Ask about a coin, the market, or $SI" autocomplete="off">
+            <button class="btn btn-primary" type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section play" id="play" aria-labelledby="play-title">
+      <div class="wrap">
+        <p class="kicker"><span>SI</span> Game</p>
+        <h2 id="play-title">TO THE MOON</h2>
+        <p class="play-lead">Boost Super Iguana through the candles. Coins add score. One red hit ends the run.</p>
+        <div class="game-shell" id="game-shell">
+          <canvas id="si-game" aria-label="Super Iguana flying game"></canvas>
+          <div class="game-hud">
+            <span id="game-score">0</span>
+            <span id="game-best">BEST 0</span>
+          </div>
+          <div class="game-overlay" id="game-overlay">
+            <img src="logo.jpg" alt="" width="92" height="92">
+            <h3 id="game-title">FLY THE CAPE</h3>
+            <p id="game-blurb">Space, click, or tap to boost. Collect $SI. Miss a candle and the run is over.</p>
+            <button class="btn btn-primary" id="game-start" type="button">PLAY</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section community" id="community">
       <div class="army-field" id="army-field" aria-hidden="true"></div>
       <div class="community-veil" aria-hidden="true"></div>
@@ -480,6 +558,8 @@
         <a href="#origin">Story</a>
         <a href="#universe">Memes</a>
         <a href="#token">Token</a>
+        <a href="#market">Chat</a>
+        <a href="#play">Play</a>
         <a href="#community">Community</a>
       </nav>
       <div class="footer-social">
@@ -507,5 +587,7 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/market.js"></script>
+  <script src="js/game.js"></script>
 </body>
 </html>
