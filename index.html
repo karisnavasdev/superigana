@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Iguana ($SI) | The SI Meme Meta</title>
+  <meta name="description" content="Meet Super Iguana ($SI), a community-driven meme universe bringing the SI meme meta to Robinhood Chain.">
+  <meta name="theme-color" content="#04140c">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="Super Iguana ($SI) | The SI Meme Meta">
+  <meta property="og:description" content="Meet Super Iguana ($SI), a community-driven meme universe bringing the SI meme meta to Robinhood Chain.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="banner.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Super Iguana ($SI) | The SI Meme Meta">
+  <meta name="twitter:description" content="Meet Super Iguana ($SI), a community-driven meme universe bringing the SI meme meta to Robinhood Chain.">
+  <meta name="twitter:image" content="banner.jpg">
+  <link rel="icon" href="logo.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Outfit:wght@400;500;600;700;800&family=Unbounded:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip" href="#top">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <div class="loader-burst" aria-hidden="true"></div>
+    <img src="logo.jpg" alt="" width="148" height="148" class="loader-logo">
+    <p class="loader-word">STAY SUPER.</p>
+    <div class="loader-bar" aria-hidden="true"><span id="loader-fill"></span></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Super Iguana home">
+      <img src="logo.jpg" alt="" width="46" height="46">
+      <span>Super Iguana</span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="#top">Home</a>
+      <a href="#origin">Story</a>
+      <a href="#universe">Memes</a>
+      <a href="#token">Token</a>
+      <a href="#community">Community</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-nav" href="#community">JOIN $SI</a>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Menu</span>
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <img class="hero-banner" src="banner.jpg" alt="" fetchpriority="high">
+        <div class="moon-glow"></div>
+        <canvas id="stars"></canvas>
+        <div class="sweep"></div>
+        <div class="hero-scrim"></div>
+        <span class="coin-float" style="--x:8%;--y:16%;--s:6.5s;--d:0s"></span>
+        <span class="coin-float" style="--x:78%;--y:12%;--s:8s;--d:-2s"></span>
+        <span class="coin-float small" style="--x:88%;--y:28%;--s:7s;--d:-1s"></span>
+        <span class="coin-float small" style="--x:18%;--y:34%;--s:9s;--d:-3s"></span>
+        <span class="coin-float" style="--x:62%;--y:22%;--s:7.5s;--d:-4s"></span>
+        <svg class="rocket" viewBox="0 0 64 120" aria-hidden="true">
+          <path d="M32 4c12 14 18 32 18 52 0 8-2 18-6 28H20c-4-10-6-20-6-28C14 36 20 18 32 4z" fill="#f4fff4"/>
+          <path d="M32 4c8 12 12 26 12 42 0 6-1 14-4 22h-8V4z" fill="#d9ffe0"/>
+          <circle cx="32" cy="42" r="7" fill="#06210f"/>
+          <circle cx="32" cy="42" r="3.5" fill="#c6ff3a"/>
+          <path d="M20 78l-12 18 16-6 12 6-16 6 12-6 16 6-12-18H20z" fill="#e10600"/>
+          <path d="M26 96c2 8 4 14 6 20 2-6 4-12 6-20H26z" fill="#ffb020"/>
+        </svg>
+        <div class="candles" aria-hidden="true">
+          <i style="--h:38%"></i><i style="--h:62%"></i><i style="--h:28%"></i><i style="--h:74%"></i><i style="--h:46%"></i><i style="--h:58%"></i>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="ticker-badge">$SI • SUPER IGUANA</p>
+        <h1 id="hero-title">
+          <span class="line"><span>SUPER</span></span>
+          <span class="line"><span>IGUANA</span></span>
+        </h1>
+        <p class="subhead">THE $SI MEME META HAS ARRIVED</p>
+        <p class="lead">Super Intelligence sparked the SI narrative. Super Iguana turns it into a meme. Born for Robinhood Chain. Powered by memes. Built by the community.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#origin">ENTER THE $SI UNIVERSE</a>
+          <a class="btn btn-ghost" href="#community">JOIN THE COMMUNITY</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <p>SUPER INTELLIGENCE → SI → SUPER IGUANA</p>
+        <p>THE $SI MEME META</p>
+        <p>SOMETHING SUPER IS COMING.</p>
+        <p>STAY SUPER.</p>
+        <p>MEMES ARE THE ROADMAP.</p>
+        <p>ONE IGUANA. UNLIMITED MEMES.</p>
+        <p>SUPER IGUANA HAS ENTERED THE CHAIN.</p>
+        <p>$SI</p>
+        <p>SUPER INTELLIGENCE → SI → SUPER IGUANA</p>
+        <p>THE $SI MEME META</p>
+        <p>SOMETHING SUPER IS COMING.</p>
+        <p>STAY SUPER.</p>
+        <p>MEMES ARE THE ROADMAP.</p>
+        <p>ONE IGUANA. UNLIMITED MEMES.</p>
+        <p>SUPER IGUANA HAS ENTERED THE CHAIN.</p>
+        <p>$SI</p>
+      </div>
+    </div>
+
+    <section class="section origin" id="origin">
+      <div class="wrap">
+        <p class="kicker"><span>01</span> Origin</p>
+        <h2>FROM SUPER INTELLIGENCE<br>TO SUPER IGUANA</h2>
+        <div class="transform" id="transform">
+          <article class="t-panel" data-step>
+            <em>01</em>
+            <strong>SUPER INTELLIGENCE</strong>
+          </article>
+          <div class="t-arrow" aria-hidden="true"></div>
+          <article class="t-panel t-panel-si" data-step>
+            <em>02</em>
+            <strong>SI</strong>
+          </article>
+          <div class="t-arrow" aria-hidden="true"></div>
+          <article class="t-panel t-panel-hot" data-step>
+            <em>03</em>
+            <strong>SUPER IGUANA</strong>
+          </article>
+        </div>
+        <div class="origin-copy">
+          <p>Every meta starts with an idea.</p>
+          <p>Super Intelligence gave the internet two powerful letters: <b>SI.</b></p>
+          <p>Super Iguana takes those letters into meme culture.</p>
+          <p>$SI is the Super Iguana meme universe built around community, creativity and Robinhood Chain culture.</p>
+        </div>
+        <p class="brand-line">SUPER INTELLIGENCE → SI → SUPER IGUANA</p>
+      </div>
+    </section>
+
+    <section class="section meet" id="meet">
+      <div class="watermark" aria-hidden="true">$SI</div>
+      <div class="wrap-wide">
+        <div class="meet-head">
+          <p class="kicker"><span>02</span> The Character</p>
+          <h2>MEET THE<br>SUPER IGUANA</h2>
+        </div>
+        <div class="meet-stage" id="meet-stage">
+          <article class="p-card" data-mood="CAPE ON." style="grid-area:hero">
+            <p class="p-kicker">THE HERO</p>
+            <p>Cape on. City behind him. Main character energy.</p>
+          </article>
+          <article class="p-card" data-mood="SEND IT." style="grid-area:degen">
+            <p class="p-kicker">THE DEGEN</p>
+            <p>Sunglasses somewhere. Conviction everywhere.</p>
+          </article>
+          <div class="meet-mascot" style="grid-area:mascot">
+            <div class="orbit" aria-hidden="true"></div>
+            <p class="bubble" id="bubble">STAY SUPER.</p>
+            <div class="mascot-tilt" id="mascot-tilt">
+              <img src="Meme/super_iguana_01_500x500.png" alt="Super Iguana flying forward in a red cape, fist raised, against a green moon" width="500" height="500" id="mascot-img">
+            </div>
+          </div>
+          <article class="p-card" data-mood="POST ME." style="grid-area:meme">
+            <p class="p-kicker">THE MEME</p>
+            <p>One face. Infinite formats. Built to be posted.</p>
+          </article>
+          <article class="p-card" data-mood="OBVIOUSLY." style="grid-area:iguana">
+            <p class="p-kicker">THE IGUANA</p>
+            <p>Green. Spiked. Unbothered. Never a normal iguana.</p>
+          </article>
+          <article class="p-card" data-mood="$SI." style="grid-area:si">
+            <p class="p-kicker">THE $SI</p>
+            <p>Two letters. A whole universe.</p>
+          </article>
+        </div>
+        <p class="punch">
+          <span>Normal iguana?</span> Never.
+          <span>Super Iguana?</span> Obviously.
+        </p>
+      </div>
+    </section>
+
+    <section class="section universe" id="universe">
+      <div class="wrap-wide">
+        <div class="universe-head">
+          <p class="kicker"><span>03</span> Gallery</p>
+          <h2>THE $SI UNIVERSE</h2>
+          <p class="roadmap">MEMES ARE THE ROADMAP.</p>
+        </div>
+        <p class="swipe-hint">Swipe the universe</p>
+        <div class="gallery" id="gallery">
+          <button class="meme-card wide" type="button" data-title="To the Moon">
+            <img src="Meme/super_iguana_01_500x500.png" alt="Super Iguana flying toward a green moon" width="500" height="500">
+            <span class="meme-cap">TO THE MOON</span>
+            <span class="impact">POW</span>
+          </button>
+          <button class="meme-card" type="button" data-title="Rocket Ride">
+            <img src="Meme/super_iguana_05_500x500.png" alt="Super Iguana riding a rocket past a green moon" width="500" height="500" loading="lazy">
+            <span class="meme-cap">ROCKET RIDE</span>
+            <span class="impact">ZOOM</span>
+          </button>
+          <button class="meme-card" type="button" data-title="Astronaut">
+            <img src="Meme/meme-astronaut.jpg" alt="Super Iguana in a green astronaut suit pointing upward in space" loading="lazy">
+            <span class="meme-cap">ASTRONAUT</span>
+            <span class="impact">WHOA</span>
+          </button>
+          <button class="meme-card" type="button" data-title="The Throne">
+            <img src="Meme/meme-throne.jpg" alt="Super Iguana seated on a golden throne in a neon palace" loading="lazy">
+            <span class="meme-cap">THE THRONE</span>
+            <span class="impact">KING</span>
+          </button>
+          <button class="meme-card" type="button" data-title="Surf the Chain">
+            <img src="Meme/super_iguana_04_500x500.png" alt="Super Iguana surfing a wave in sunglasses" width="500" height="500" loading="lazy">
+            <span class="meme-cap">SURF THE CHAIN</span>
+            <span class="impact">SHRED</span>
+          </button>
+          <button class="meme-card" type="button" data-title="The Trade">
+            <img src="Meme/meme-trading.jpg" alt="Super Iguana at a trading desk pointing at green charts" loading="lazy">
+            <span class="meme-cap">THE TRADE</span>
+            <span class="impact">$SI</span>
+          </button>
+          <button class="meme-card" type="button" data-title="Wall Street">
+            <img src="Meme/super_iguana_06_500x500.png" alt="Super Iguana in a suit holding a gold coin in front of a golden bull" width="500" height="500" loading="lazy">
+            <span class="meme-cap">WALL STREET</span>
+            <span class="impact">BOSS</span>
+          </button>
+          <button class="meme-card span2" type="button" data-title="The Army">
+            <img src="Meme/super_iguana_07_500x500.png" alt="Super Iguana leading a cheering crowd of iguanas in a neon city" width="500" height="500" loading="lazy">
+            <span class="meme-cap">THE ARMY</span>
+            <span class="impact">ARMY</span>
+          </button>
+          <button class="meme-card span2" type="button" data-title="Temple Mode">
+            <img src="Meme/super_iguana_09_500x500.png" alt="Super Iguana meditating at an ancient jungle temple" width="500" height="500" loading="lazy">
+            <span class="meme-cap">TEMPLE MODE</span>
+            <span class="impact">ZEN</span>
+          </button>
+          <button class="meme-card span2" type="button" data-title="The City">
+            <img src="Meme/super_iguana_10_500x500.png" alt="Iguanas looking up at a futuristic city of glowing green towers" width="500" height="500" loading="lazy">
+            <span class="meme-cap">CHAIN CITY</span>
+            <span class="impact">NEON</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="comic" id="story">
+      <div class="comic-pin" id="comic-pin">
+        <div class="comic-intro wrap">
+          <p class="kicker"><span>04</span> Issue 01</p>
+          <h2>SUPER IGUANA STORY</h2>
+        </div>
+        <div class="comic-viewport" id="comic-viewport">
+          <div class="comic-track" id="comic-track">
+            <article class="panel">
+              <div class="panel-frame">
+                <img src="Meme/super_iguana_10_500x500.png" alt="Iguanas watching a futuristic neon city" loading="lazy">
+                <span class="panel-no">01</span>
+                <p class="caption">A normal iguana watches the crypto world.</p>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="panel-frame panel-type">
+                <span class="panel-no">02</span>
+                <p class="panel-word">SUPER<br>INTELLIGENCE</p>
+                <p class="caption">Super Intelligence appears.</p>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="panel-frame panel-type panel-si">
+                <span class="panel-no">03</span>
+                <p class="panel-word si-burst">SI</p>
+                <p class="caption">The letters SI begin glowing.</p>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="panel-frame panel-type panel-power">
+                <span class="panel-no">04</span>
+                <img class="power-logo" src="logo.jpg" alt="" width="220" height="220">
+                <div class="rings" aria-hidden="true"></div>
+                <p class="caption">The iguana receives superpowers.</p>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="panel-frame">
+                <img src="Meme/super_iguana_01_500x500.png" alt="Super Iguana flying with a red cape" loading="lazy">
+                <span class="panel-no">05</span>
+                <p class="caption">SUPER IGUANA is born.</p>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="panel-frame">
+                <img src="Meme/super_iguana_07_500x500.png" alt="A crowd of iguanas celebrating in a neon city" loading="lazy">
+                <span class="panel-no">06</span>
+                <p class="caption">The $SI army enters Robinhood Chain.</p>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="panel-frame panel-end">
+                <span class="panel-no dark">07</span>
+                <p class="end-line">THE NEXT CHAPTER IS WRITTEN BY THE COMMUNITY.</p>
+                <a class="btn btn-ink" href="#community">JOIN THE ARMY</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why" id="why">
+      <div class="wrap">
+        <p class="kicker"><span>05</span> Culture</p>
+        <h2>WHY $SI</h2>
+        <div class="why-grid">
+          <article class="why-card" data-tilt>
+            <span class="why-no">01</span>
+            <h3>MEME POWER</h3>
+            <p>Born for internet culture.</p>
+          </article>
+          <article class="why-card" data-tilt>
+            <span class="why-no">02</span>
+            <h3>SUPER COMMUNITY</h3>
+            <p>Built to grow through creativity and community participation.</p>
+          </article>
+          <article class="why-card" data-tilt>
+            <span class="why-no">03</span>
+            <h3>ROBINHOOD CHAIN</h3>
+            <p>A meme identity designed around the emerging ecosystem.</p>
+          </article>
+          <article class="why-card" data-tilt>
+            <span class="why-no">04</span>
+            <h3>ENDLESS CONTENT</h3>
+            <p>One iguana. Unlimited memes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section token" id="token">
+      <div class="wrap token-grid">
+        <div class="coin-wrap">
+          <div class="coin" aria-hidden="true">
+            <div class="coin-face front">
+              <span>$SI</span>
+              <small>SUPER IGUANA</small>
+            </div>
+            <div class="coin-face back">
+              <b>SI</b>
+            </div>
+          </div>
+        </div>
+        <div class="token-copy">
+          <p class="kicker"><span>06</span> Token</p>
+          <h2 class="token-name"><span>$SI</span>SUPER IGUANA</h2>
+          <p class="entered">SUPER IGUANA HAS ENTERED THE CHAIN.</p>
+          <dl class="specs">
+            <div>
+              <dt>Ticker</dt>
+              <dd>$SI</dd>
+            </div>
+            <div>
+              <dt>Name</dt>
+              <dd>Super Iguana</dd>
+            </div>
+            <div>
+              <dt>Chain</dt>
+              <dd>Robinhood Chain</dd>
+            </div>
+            <div>
+              <dt>Contract</dt>
+              <dd>
+                <code id="contract">0xxomingsoon</code>
+                <button class="copy-btn" id="copy-btn" type="button">COPY</button>
+              </dd>
+            </div>
+            <div>
+              <dt>Launch</dt>
+              <dd>COMING SOON</dd>
+            </div>
+          </dl>
+          <p class="token-note">A community meme project. No financial promises.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="soon" id="soon">
+      <div class="soon-sky" aria-hidden="true">
+        <div class="soon-moon"></div>
+        <div class="soon-city">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <svg class="bolts" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice">
+          <polyline class="bolt" points="180,40 240,180 190,190 280,360"/>
+          <polyline class="bolt b2" points="1120,20 1040,160 1100,180 980,340"/>
+          <polyline class="bolt b3" points="700,0 760,120 700,140 790,280"/>
+        </svg>
+        <div class="soon-flash"></div>
+      </div>
+      <img class="soon-sil" src="Meme/super_iguana_01_500x500.png" alt="" width="500" height="500">
+      <div class="ledge" aria-hidden="true"></div>
+      <div class="soon-copy">
+        <h2>SOMETHING SUPER IS COMING.</h2>
+        <p class="soon-si">$SI</p>
+        <p class="soon-label">COMING SOON</p>
+      </div>
+    </section>
+
+    <section class="section community" id="community">
+      <div class="army-field" id="army-field" aria-hidden="true"></div>
+      <div class="community-veil" aria-hidden="true"></div>
+      <div class="wrap community-copy">
+        <p class="kicker"><span>07</span> Army</p>
+        <h2>JOIN THE IGUANA ARMY</h2>
+        <p class="army-line">One Iguana is a meme.</p>
+        <p class="army-line gold">Thousands of Iguanas are a movement.</p>
+        <div class="socials">
+          <a class="social" href="https://x.com/SuperIguana_" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.7 10.3 22.4 2h-1.8l-6.7 7.2L8.6 2H2l8.1 11.2L2 22h1.8l7.1-7.6L15.4 22H22l-7.3-11.7Zm-2.5 2.7-.8-1.1L4.5 3.3h2.8l5.3 7.1.8 1.1 6.9 9.2h-2.8l-5.3-7.7Z"/></svg>
+            <span>X / Twitter</span>
+          </a>
+          <button class="social" id="telegram-btn" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.5 4.4 2.7 11.6c-1.3.5-1.3 1.2-.2 1.5l4.8 1.5 11.1-7c.5-.3 1-.1.6.2l-9 8.1-.3 4.7c.5 0 .7-.2 1-.5l2.4-2.3 5 3.7c.9.5 1.6.2 1.8-.9l3.3-15.4c.3-1.3-.5-1.9-1.7-1.5Z"/></svg>
+            <span>Telegram</span>
+          </button>
+          <a class="social" href="https://x.com/SuperIguana_" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 11a3 3 0 1 0-3-3 3 3 0 0 0 3 3Zm8 0a3 3 0 1 0-3-3 3 3 0 0 0 3 3ZM8 13c-2.7 0-8 1.3-8 4v2h11.2a6.5 6.5 0 0 1-.2-1.5c0-2.2 1.2-4.1 3-5.4A14 14 0 0 0 8 13Zm8 0c-.3 0-.7 0-1 .1a5.4 5.4 0 0 1 3.5 4.4c0 .5 0 1-.1 1.5H24v-2c0-2.7-5.3-4-8-4Z"/></svg>
+            <span>Community</span>
+          </a>
+        </div>
+        <p class="stay">STAY SUPER.</p>
+      </div>
+    </section>
+
+    <section class="finale" id="finale">
+      <div class="finale-bg" aria-hidden="true">
+        <img src="Meme/meme-astronaut.jpg" alt="">
+        <div class="finale-shade"></div>
+      </div>
+      <div class="finale-copy">
+        <h2 class="sr-only">Super Iguana. $SI</h2>
+        <div class="finale-stage" id="finale-stage" aria-hidden="true">
+          <p class="fl-main" id="fl-main">SUPER IGUANA.</p>
+          <p class="fl-mid" id="fl-mid"></p>
+          <p class="fl-sub" id="fl-sub">$SI</p>
+        </div>
+        <a class="btn btn-primary finale-btn" href="#universe">ENTER THE $SI UNIVERSE</a>
+        <button class="replay" id="replay" type="button">Play it again</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="" width="64" height="64">
+        <div>
+          <strong>Super Iguana</strong>
+          <em>$SI</em>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#top">Home</a>
+        <a href="#origin">Story</a>
+        <a href="#universe">Memes</a>
+        <a href="#token">Token</a>
+        <a href="#community">Community</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://x.com/SuperIguana_" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+        <button type="button" id="telegram-footer">Telegram</button>
+      </div>
+      <p class="disclaimer">Super Iguana is a community-driven meme project. Nothing on this website constitutes financial advice. References to Robinhood Chain describe the network/ecosystem and should not imply official affiliation or endorsement unless officially established.</p>
+      <p class="legal">© 2026 Super Iguana. Stay super.</p>
+    </div>
+  </footer>
+
+  <dialog id="lightbox" aria-label="Meme viewer">
+    <button class="lb-close" type="button" id="lb-close" aria-label="Close">×</button>
+    <button class="lb-nav prev" type="button" id="lb-prev" aria-label="Previous meme">‹</button>
+    <figure>
+      <img id="lb-img" alt="">
+      <figcaption id="lb-cap"></figcaption>
+    </figure>
+    <button class="lb-nav next" type="button" id="lb-next" aria-label="Next meme">›</button>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
