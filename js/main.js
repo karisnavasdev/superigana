@@ -1,7 +1,6 @@
 const SI = {
   contract: "0xba1A2d9783eBE2B76493c5C12eB9813a0e062843",
-  twitter: "https://x.com/SuperIguana_",
-  telegram: "https://t.me/superiguanas"
+  twitter: "https://x.com/SuperIguana_"
 };
 
 const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
