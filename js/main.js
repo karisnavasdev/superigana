@@ -1,6 +1,7 @@
 const SI = {
   contract: "0xba1A2d9783eBE2B76493c5C12eB9813a0e062843",
-  twitter: "https://x.com/SuperIguana_"
+  twitter: "https://x.com/SuperIguana_",
+  telegram: "https://t.me/superiguanas"
 };
 
 const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -37,10 +38,9 @@ if (document.readyState === "complete") revealWhenReady();
 else window.addEventListener("load", revealWhenReady);
 setTimeout(finishLoader, 3200);
 
-function copyContract() {
+function copyContract(btn) {
   const text = SI.contract;
   const done = () => {
-    const btn = document.getElementById("copy-btn");
     btn.textContent = "COPIED";
     toast("Contract copied");
     setTimeout(() => { btn.textContent = "COPY"; }, 1600);
@@ -65,14 +65,9 @@ function fallbackCopy(text, done) {
   area.remove();
 }
 
-document.getElementById("copy-btn").addEventListener("click", copyContract);
-
-function telegramNote() {
-  toast("Telegram opens with launch. The army is on X for now.");
-}
-
-document.getElementById("telegram-btn").addEventListener("click", telegramNote);
-document.getElementById("telegram-footer").addEventListener("click", telegramNote);
+document.querySelectorAll(".copy-btn").forEach((btn) => {
+  btn.addEventListener("click", () => copyContract(btn));
+});
 
 const nav = document.getElementById("nav");
 const burger = document.getElementById("burger");
